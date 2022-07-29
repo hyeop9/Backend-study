@@ -14,14 +14,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-@Transactional
+@Transactional // 데이터를 롤백 하기 때문에 남아 있는 것이 없음 // 다음 테스트 용이
 class MemberServiceIntegrationTest {
 
     // test 는 필드 기반으로 받는 것이 편함 (@Autowired)
-    @Autowired MemberService memberService;
+    @Autowired
+    MemberService memberService;
     @Autowired
     MemberRepository memberRepository; // clear 쓰기 위해 가져옴
-
 
     @Test
     void 회원가입() {   // given, when, then 으로 주석 달고 하면 좋음
@@ -48,18 +48,10 @@ class MemberServiceIntegrationTest {
 
         //when
         memberService.join(member1);
-            // memberService.join(member2)를 넣으면 IllegalStateException.class(예외) 발생
+        // memberService.join(member2)를 넣으면 IllegalStateException.class(예외) 발생
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다");
 
         //then
-    }
-
-    @Test
-    void findMembers() {
-    }
-
-    @Test
-    void findOne() {
     }
 }
