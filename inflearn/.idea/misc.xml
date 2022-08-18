@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/core" />
+    <file type="web" url="file://$PROJECT_DIR$/hello-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc1/item-service" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc1/servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc1/springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc2/form" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc2/thymeleaf-basic" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" project-jdk-name="18" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
