@@ -10,6 +10,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 //import hello.core.order.OrderServiceImpl;
 
+/*
+* 주문과 할인 정책 실행
+* 사용 클래스
+*/
 public class OrderApp {
 
     public static void main(String[] args) {

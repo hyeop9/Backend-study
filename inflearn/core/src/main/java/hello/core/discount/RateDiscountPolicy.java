@@ -5,6 +5,7 @@ import hello.core.member.Grade;
 import hello.core.member.Member;
 import org.springframework.stereotype.Component;
 
+/* 퍼센트 할인 정책 구현체 */
 @Component
 @MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
