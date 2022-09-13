@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration // 설정을 구성한다는 뜻
 public class AppConfig {
 
-    @Bean // 스프링 컨테이너에 반환값을 프링 빈으로 등록
+    @Bean // 스프링 컨테이너에 반환값을 스프링 빈으로 등록
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
     }
