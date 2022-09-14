@@ -13,10 +13,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/basic/items")
-@RequiredArgsConstructor
+@RequiredArgsConstructor    // final이 붙은 멤버변수만 사용해서 생성자를 만들어준다.
 public class BasicItemController {
 
-    private final ItemRepository itemRepository;
+    private final ItemRepository itemRepository;    // 생성자가 1개라 스프링이 @Autowired로 의존관계를 주입해준다.
 
     @GetMapping
     public String items(Model model) {
@@ -112,7 +112,7 @@ public class BasicItemController {
     }
 
     // 테스트용 데이터
-    @PostConstruct
+    @PostConstruct  // 해당 빈의 의존관계가 모두 주입되고 나면 초기화 용도로 호출된다.
     public void init() {
 
         itemRepository.save(new Item("itemA", 10000, 10));
