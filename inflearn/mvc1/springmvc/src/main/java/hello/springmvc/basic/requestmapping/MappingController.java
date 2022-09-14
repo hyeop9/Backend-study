@@ -10,7 +10,8 @@ public class MappingController {
     private Logger log = LoggerFactory.getLogger(getClass());
 
     /**
-     * 기본 요청 * 둘다 허용 /hello-basic, /hello-basic/
+     * 기본 요청
+     * 둘다 허용 /hello-basic, /hello-basic/
      * HTTP 메서드 모두 허용 GET, HEAD, POST, PUT, PATCH, DELETE
      */
     @RequestMapping("/hello-basic")
