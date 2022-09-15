@@ -20,7 +20,7 @@ public class ItemRepository {
         return item;
     }
 
-    // 조회
+    // 상세 조회
     public Item findById(Long id) {
         return store.get(id);
     }
