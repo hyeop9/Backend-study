@@ -89,6 +89,7 @@ public class BasicItemController {
         return "redirect:/basic/items/" + item.getId();
     }
 
+    /* 상품 등록 처리 */
     @PostMapping("/add")
     public String addItemV6(Item item, RedirectAttributes redirectAttributes) {  // 생략 시 자동 @ModelAttribute
         Item saveItem = itemRepository.save(item);
@@ -105,6 +106,7 @@ public class BasicItemController {
         return "basic/editForm";
     }
 
+    /* 상품 수정 처리 */
     @PostMapping("/{itemId}/edit")
     public String edit(@PathVariable Long itemId, @ModelAttribute Item item) {
         itemRepository.update(itemId, item);
