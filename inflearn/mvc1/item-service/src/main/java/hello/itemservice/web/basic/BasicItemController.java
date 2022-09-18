@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor    // final이 붙은 멤버변수만 사용해서 생성자를 만들어준다.
 public class BasicItemController {
 
-    private final ItemRepository itemRepository;    // 생성자가 1개라 스프링이 @Autowired로 의존관계를 주입해준다.
+    private final ItemRepository itemRepository;    // 생성자가 1개면 스프링이 자동으로 @Autowired로 의존관계를 주입해준다.
 
     @GetMapping
     public String items(Model model) {
