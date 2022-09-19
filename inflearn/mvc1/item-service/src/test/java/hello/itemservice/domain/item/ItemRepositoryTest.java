@@ -7,11 +7,12 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
+/* 상품 저장소 테스트 */
 class ItemRepositoryTest {
 
     ItemRepository itemRepository = new ItemRepository();
 
-    @AfterEach
+    @AfterEach // 테스트가 끝날 때마다 실행
     void afterEach() {
         itemRepository.clearStore();
     }
