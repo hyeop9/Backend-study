@@ -1,2 +1,6 @@
-package study.baseball.domain;public class Ball {
+package study.baseball.domain;
+
+public class Ball {
+    public Ball() {
+    }
 }

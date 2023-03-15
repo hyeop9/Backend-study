@@ -1,2 +1,9 @@
-package study.baseball.domain;public class Referee {
+package study.baseball.domain;
+
+import java.util.List;
+
+public class Referee {
+    public String compare(List<Integer> computer, List<Integer> player) {
+        return "";
+    }
 }
