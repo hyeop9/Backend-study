@@ -1,13 +1,13 @@
-package baseball.study;
+package study.baseball;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudyApplication {
+public class BaseballApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudyApplication.class, args);
+		SpringApplication.run(BaseballApplication.class, args);
 	}
 
 }

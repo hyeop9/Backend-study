@@ -38,7 +38,7 @@ public class FormItemController {
         return ItemType.values();
     }
 
-    @ModelAttribute("deliverytCodes")
+    @ModelAttribute("deliveryCodes")
     public List<DeliveryCode> deliveryCodes() {
         List<DeliveryCode> deliveryCodes = new ArrayList<>();
         deliveryCodes.add(new DeliveryCode("FAST", "빠른 배송"));

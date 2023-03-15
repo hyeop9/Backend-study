@@ -1,10 +1,10 @@
-package baseball.study;
+package study.baseball;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudyApplicationTests {
+class BaseballApplicationTests {
 
 	@Test
 	void contextLoads() {
