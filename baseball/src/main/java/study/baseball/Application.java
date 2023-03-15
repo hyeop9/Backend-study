@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import study.baseball.domain.Judgment;
 import study.baseball.domain.NumberGenerator;
+import study.baseball.domain.Referee;
 
 /**
  * 객체 지향 프로그래밍
@@ -21,7 +22,11 @@ public class Application {
 //		final int count = judgment.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
 //		System.out.println(count);
 
-		boolean place = judgment.hasPlace(Arrays.asList(7, 8, 9), 1, 7);
-		System.out.println(place);
+//		boolean place = judgment.hasPlace(Arrays.asList(7, 8, 9), 1, 7);
+//		System.out.println(place);
+
+		Referee referee = new Referee();
+		String result = referee.compare(Arrays.asList(3, 1, 2), Arrays.asList(1, 2, 3));
+		System.out.println(result);
 	}
 }
